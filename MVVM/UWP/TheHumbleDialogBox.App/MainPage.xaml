@@ -1,0 +1,19 @@
+﻿<Page
+    x:Class="TheHumbleDialogBox.App.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:TheHumbleDialogBox.App"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+
+        <TextBox HorizontalAlignment="Left" Margin="243,97,0,0" VerticalAlignment="Top" Text="{x:Bind ViewModel.Name, Mode=TwoWay}" />
+        <TextBox HorizontalAlignment="Left" Margin="243,165,0,0" VerticalAlignment="Top" Text="{x:Bind ViewModel.Ssn, Mode=TwoWay}" />
+        <Button Content="Button" HorizontalAlignment="Left" Margin="248,236,0,0" VerticalAlignment="Top" Click="Button_Click"/>
+        <TextBlock HorizontalAlignment="Left" Margin="248,55,0,0" Text="{x:Bind ViewModel.ErrorMessage, Mode=TwoWay}" TextWrapping="Wrap" VerticalAlignment="Top" Width="241"/>
+
+    </Grid>
+</Page>
